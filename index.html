@@ -1,41 +1,57 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-	<title>my project</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	
-	
-	
+	<meta charset="utf-8">
+	<link charset="utf-8" href="./assets/css/style.css" rel="stylesheet">
 </head>
+<body class="noselect" style="background-Color: black;">
+<img class="cookie" src="cookie.png" onclick="cookie_set();" ondrag="return false" ondragdrop="return false" ondragstart="return false">
 
-<body>
+<div class="stats" id="stats">
 
-<div class="wrapper">
+<div class="stat_box" id="cookies"></div>
+<div class="stat_box" id="second"></div>
+<div class="stat_box" id="damager"></div>
+<hr style="border-color: gold; font-size: 1%;">
+<div class="stat_box" id="cursor_obj"></div>
+<div class="stat_box" id="grandma_obj"></div>
+<div class="stat_box" id="farm_obj"></div>
+<div class="stat_box" id="factory_obj"></div>
+<div class="stat_box" id="mine_obj"></div>
+<div class="stat_box" id="shipment_obj"></div>
+<div class="stat_box" id="alchemy_lab_obj"></div>
+<div class="stat_box" id="portal_obj"></div>
+<div class="stat_box" id="time_machine_obj"></div>
+<div class="stat_box" id="antimatter_condenser_obj"></div>
 
-	<header class="header">
-		<strong>MEMECLICKER:</strong> DANGER!!!! This MEME SPACE!!!!
-	</header><!-- .header-->
+</div>
 
-	<main class="content">
-	
+<div class="shop" id="shop">
+<div class="items" id="item0" style="color: black; text-align: center;"><table style="background: none; color: gold; text-shadow: 1px 1px 1px black; cursor: auto;"><td><label class="items_list">Товар</label></td><td><label class="items_cost">Цена</label></td><td><label class="items_attribute">Печенек</label></td><td><label class="items_second_attribute">Печенек/Сек</label></td></table></div>
 
-	</main><!-- .content -->
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {cursor_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
 
-</div><!-- .wrapper -->
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {grandma_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
 
-<footer class="footer">
-	<strong>P.C.:</strong> Feel my memes
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {farm_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
 
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {factory_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
 
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {mine_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
 
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {shipment_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
 
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {alchemy_lab_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
 
-<!--<link rel="stylesheet" href="assets/css/reset.css">-->
-	<link href="assets/css/style.css?ver1.1" rel="stylesheet">
-	<script src="assets/js/main.js?ver1"></script>
-	
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {portal_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
+
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {time_machine_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
+
+<div class="item noselect" id="itemr" onclick="buy(this.cost_var, this.attribute_var); if(buy_ok==true) {antimatter_condenser_var+=1; this.attribute_varible=Math.round(attribute_var/3); click_second+=this.attribute_varible; clicker(this.attribute_varible); this.cost_var=Math.round(this.cost_var+this.cost_var); this.getElementsByClassName('cost')[0].textContent=this.cost_var; buy_ok=false;}"><table><td><label class="item_list" style="color: gold; font-weight: 600;"></label></td> <td><label class="cost"></label></td><td><label class="attribute"></label></td><td><label class="second_attribute"></label></td></table></div>
+
+</div>
+
+<script charset="utf-8"  src="./assets/js/main.js"></script>
+
 </body>
+
 </html>
