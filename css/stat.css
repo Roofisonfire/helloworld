@@ -1,0 +1,13 @@
+.block{
+	height: 400px;
+	background-color: green;
+	margin-bottom: 10px;
+}
+
+.name{
+	margin-top: 70px;
+	height: 200px;
+	color: black;
+	font-size: 500%;
+	vertical-align: bottom; 
+}
